@@ -6,3 +6,24 @@
 	min-height: 300px;
 	margin: 0 auto;
 }
+/* entête champ de recherche */
+.searchBar {
+	background-color: rgb(19, 17, 17);
+	color: aliceblue;
+	text-align: center;
+	padding: 20px 0;
+}
+/* test */
+.test {
+	border: red dashed 2px;
+	height: 300px;
+	width: 50%;
+}
+.testImg {
+	border: rgb(14, 238, 6) dashed 2px;
+	height: 80px;
+}
+/* flex */
+.flex {
+	display: flex;
+}

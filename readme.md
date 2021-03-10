@@ -19,10 +19,13 @@ Ressources :
 XMLHttpRequest
 Fetch
 LIKE (SQL)
-Datalist (HTML)
+Datalist (HTML) ==> menu
+
+- https://developer.mozilla.org/fr/docs/Web/HTML/Element/datalist
 
 ```
-
+document.createElement
+let element = document.createElement(tagName[, options]);
 ---
 **ESCADRILLE JKAS**
 
