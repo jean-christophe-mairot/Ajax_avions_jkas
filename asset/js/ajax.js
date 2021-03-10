@@ -22,9 +22,8 @@ form.addEventListener("submit", (e) => {
     .then((data) => {
       //on manipule nos données
       console.log(data);
-
+      //recuperation de l'index [0] qui correspond a la premiere entree du tableau
       resultDiv.innerHTML = `<p> ${data[0].description} </p>`;
-
       //je vide mon formulaire
       form.reset();
     })
