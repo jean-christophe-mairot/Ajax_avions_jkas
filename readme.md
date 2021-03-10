@@ -22,6 +22,7 @@ LIKE (SQL)
 Datalist (HTML) ==> menu
 
 - https://developer.mozilla.org/fr/docs/Web/HTML/Element/datalist
+- https://www.youtube.com/watch?v=wxz5vJ1BWrc
 
 ```
 document.createElement

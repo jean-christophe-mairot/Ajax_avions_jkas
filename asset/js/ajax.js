@@ -9,7 +9,7 @@ form.addEventListener("submit", (e) => {
 
   //On communique avec le script passé en 1er argument sous forme de caractère
   fetch(
-    "../ajax.php",
+    "ajax.php",
     //2ème argument de fetch, le corps de notre requête, dans notre cas on précise la méthode "POST" et le body (les données) soit le formData
     {
       method: "POST",
@@ -23,7 +23,7 @@ form.addEventListener("submit", (e) => {
       //on manipule nos données
       console.log(data);
 
-      resultDiv.innerHTML = `<p> ${data.description[1]} </p>`;
+      resultDiv.innerHTML = `<p> ${data[0].description} </p>`;
 
       //je vide mon formulaire
       form.reset();
