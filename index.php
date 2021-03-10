@@ -1,8 +1,12 @@
 <?php
-include "header.php";
+include "inc/header.php";
+
+
+// test($allplanes);
+
 ?>
 <div class="container">
-	<div>
+	<div class="searchBar">
 		<form action="">
 			<!-- champ de recherche du user -->
 			<label for="search">Faite votre recherche</label>
@@ -17,5 +21,5 @@ include "header.php";
 	</div>
 </div>
 <?php
-include "footer.php";
+include "inc/footer.php";
 ?>

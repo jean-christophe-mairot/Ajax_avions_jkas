@@ -1,0 +1,8 @@
+/* finche générale avec champs de recherche*/
+.container {
+	border: 1px solid #333;
+	border-radius: 5px;
+	width: 70%;
+	min-height: 300px;
+	margin: 0 auto;
+}

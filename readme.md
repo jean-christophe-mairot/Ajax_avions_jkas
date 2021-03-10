@@ -1,6 +1,6 @@
 - on fait une recherche dans un input
 - autocomplétion fait en fonction de la base de donné
-- assync lors de la recherche
+- ascync lors de la recherche
 
 ---
 

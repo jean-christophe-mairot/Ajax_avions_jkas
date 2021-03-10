@@ -1,0 +1,38 @@
+f18
+
+Le Hornet est un chasseur réellement multi-rôles, qui peut passer de l'attaque de cibles au sol au combat air-air d'un simple 
+appui sur un bouton. Aussi à l'aise sur un porte-avions que sur une base aérienne terrestre, le Hornet est équipé d'une vaste 
+gamme de capteurs comprenant un radar, un pod de désignation et un viseur de casque. Au delà de son canon interne de 20 mm, 
+le Hornet peut être armé d'une large panoplie de bombes et de roquettes non guidées, de bombes guidées laser ou GPS, de missiles 
+air-sol de toutes sortes et missiles air-air à guidage radar ou infrarouge.
+
+DCS World constitue le théâtre de bataille numérique le plus riche et le plus authentique pour le Hornet.
+
+Fonctionnalités clé de DCS: F/A-18C Hornet :
+
+Modèle de vol professionnel (PFM) et système de commandes de vol (FCS) authentique
+Modèle 3D du F/A-18C, réaliste jusqu'au moindre rivet
+Simulation détaillée des nombreux systèmes du Hornet comme les moteurs, le carburant, l'électricité, l'hydraulique, les radios, l'éclairage, les modes d'urgences et bien d'autres.
+Systèmes de navigation inertiels et GPS avec carte défilante
+Pratiquement toutes les armes et tous les capteurs utilisés par les F/A-18C de l'US Navy au milieu des années 2000
+Cockpit ultra-réaliste, et bien sûr interactif avec la souris ("cliquable")
+Système de récupération de vrille
+Sons authentiques du Hornet, réalisés avec l'aide de Boeing
+Nouveaux effets comme la vapeur de condensation au-dessus des ailes
+Prise en charge de la réalité virtuelle
+Multiples livrées
+
+------------------------------------------------------------------------------------------------------------------------------------
+m2000
+
+Le M-2000C est un chasseur de 4ème génération multi-rôle, de conception française. Il fût conçu dans les années 70 comme 
+chasseur léger et plus de 600 M-2000C ont été produits à ce jour. Le M-2000C est un monoréacteur avec une aile delta "pure" 
+(sans plan horizontal séparé à l'empennage). Son système de commandes de vol électriques et sa stabilité réduite lui procurent 
+une excellente manœuvrabilité. Le M-2000C est équipé d’un radar multi-mode RDI capable de suivre et d’engager des cibles hors de 
+portée visuelle. En plus de pouvoir engager les autres appareils avec ses missiles et ses canons, le M-2000C peut attaquer 
+des cibles au sol avec ses canons, des roquettes ou des bombes. Le M-2000C est parfaitement adapté aux champs de bataille de 
+DCS World !
+
+Nous apportons maintenant la simulation du M-2000C dans DCS World. 
+Le M-2000C est fortement optimisé pour fonctionner dans DCS World et profiter avantageusement de 
+l’environnement que seul Eagle Dynamics peut offrir. 
