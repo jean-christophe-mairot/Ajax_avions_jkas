@@ -27,12 +27,12 @@ Datalist (HTML)
 **ESCADRILLE JKAS**
 
 
-- [ ] header avec la photo de l'avion en cour
-- [ ] footer ??? juste un fond pour l'instant
-- [ ] en dessous du header une grande carde
-    - [ ] entête formulaire
-    - [ ] en dessous de l'entête description complète de l'avion
-    - [ ] si pas d'avion selectionné mettre une desciption de dcs
+- [] header avec la photo de l'avion en cour
+- [] footer ??? juste un fond pour l'instant
+- [] en dessous du header une grande carde
+    - [] entête formulaire
+    - [] en dessous de l'entête description complète de l'avion
+    - [] si pas d'avion selectionné mettre une desciption de dcs
 
 ```
 
