@@ -1,6 +1,7 @@
 const resultDiv = document.getElementById("description");
 const search = document.getElementById("search");
 const form = document.querySelector("form");
+let createDiv = document.createElement("div");
 
 //j'ecoute une pression d'une touche dans l'input search
 search.addEventListener("keyup", (e) => {
@@ -24,19 +25,23 @@ search.addEventListener("keyup", (e) => {
       //je récupère le JSON renvoyé dans une variable. Je parse le JSON afin d'obtenir un objet JavaScript
       const values = JSON.parse(xhr.response);
       //foreach in
+
       values.forEach((value) => {
-        //Je mets à jour le visuel avec les données reçues, syntaxe ES6 : https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Template_literals
+        // fabrique une brique
+        uneBrique = document.createElement("div");
+        // Ajoute une classe à cette brique pour lui donner un style via CSS
+        uneBrique.className = "classBrique";
+        // Ajoute un contenu à cette brique...
+        uneBrique.innerHTML = value.description;
+        // Insére cette brique dans la div resultDiv
+        resultDiv.appendChild(uneBrique);
 
-        let createDiv = document.createElement("div");
-        console.log(createDiv);
-        let newContent = document.createTextNode(value.description);
-        createDiv.appendChild(newContent);
-        resultDiv.innerHTML = value.description;
-        createDiv.innerHTML = value.description;
-
-        console.log(value);
+        // let newContent = document.createTextNode(value.description);
+        // createDiv.appendChild(newContent);
+        // // resultDiv.innerHTML = value.description;
+        // console.log(newContent);
+        // console.log(value);
       });
-
       //foreach out
     }
   });
