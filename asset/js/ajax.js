@@ -4,48 +4,55 @@ const form = document.querySelector("form");
 
 //j'ecoute une pression d'une touche dans l'input search
 search.addEventListener("keyup", (e) => {
-	//pas de reload de la page
-	e.preventDefault();
-	const searchString = e.target.value;
-	console.log(searchString);
+  //pas de reload de la page
+  e.preventDefault();
+  const searchString = e.target.value;
+  console.log(searchString);
 
-	//création d'un
-	const xhr = new XMLHttpRequest();
-	//ensemble de clef valeurs du form
-	const formData = new FormData(form);
-	//connexion avec le fichier PHP en méthode "POST"
-	xhr.open("POST", "ajax.php");
-	//envoie les données du formulaire
-	xhr.send(formData);
-	//écoute readystatechange
-	xhr.addEventListener("readystatechange", () => {
-		//readyState = 4 et status = 200
-		if (xhr.readyState === 4 && xhr.status === 200) {
-			//je récupère le JSON renvoyé dans une variable. Je parse le JSON afin d'obtenir un objet JavaScript
-			const values = JSON.parse(xhr.response);
-			//foreach in
-			values.forEach((value) => {
-				//Je mets à jour le visuel avec les données reçues, syntaxe ES6 : https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Template_literals
-				resultDiv.innerText = value.description;
-				console.log(value);
-			});
+  //création d'un
+  const xhr = new XMLHttpRequest();
+  //ensemble de clef valeurs du form
+  const formData = new FormData(form);
+  //connexion avec le fichier PHP en méthode "POST"
+  xhr.open("POST", "ajax.php");
+  //envoie les données du formulaire
+  xhr.send(formData);
+  //écoute readystatechange
+  xhr.addEventListener("readystatechange", () => {
+    //readyState = 4 et status = 200
+    if (xhr.readyState === 4 && xhr.status === 200) {
+      //je récupère le JSON renvoyé dans une variable. Je parse le JSON afin d'obtenir un objet JavaScript
+      const values = JSON.parse(xhr.response);
+      //foreach in
+      values.forEach((value) => {
+        //Je mets à jour le visuel avec les données reçues, syntaxe ES6 : https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Template_literals
 
-			//foreach out
-		}
-	});
+        let createDiv = document.createElement("div");
+        console.log(createDiv);
+        let newContent = document.createTextNode(value.description);
+        createDiv.appendChild(newContent);
+        resultDiv.innerHTML = value.description;
+        createDiv.innerHTML = value.description;
+
+        console.log(value);
+      });
+
+      //foreach out
+    }
+  });
 });
 
-var mycars = new Array();
-mycars[0] = "Herr";
-mycars[1] = "Frau";
+// var mycars = new Array();
+// mycars[0] = "Herr";
+// mycars[1] = "Frau";
 
-var options = "";
+// var options = "";
 
-for (var i = 0; i < mycars.length; i++) {
-	options += '<option value="' + mycars[i] + '" />';
-}
+// for (var i = 0; i < mycars.length; i++) {
+//   options += '<option value="' + mycars[i] + '" />';
+// }
 
-document.getElementById("anrede").innerHTML = options;
+// document.getElementById("anrede").innerHTML = options;
 
 //si champ vide on propose rien
 //boucle array.forEach(element => {
