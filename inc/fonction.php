@@ -9,7 +9,18 @@ function getAll()
     $allplanes = $result->fetchall();
     return $allplanes;
 }
+function getSearch(){
+    $bdd = getBdd();
+    //securise les données avec htmlspecialchars
+    if(isset($_POST['search']) && !empty($_POST['search'])){
 
+    $search = htmlspecialchars($_POST['search']);
+    // exlode pour la separation des recherches
+    // $search_array = explode(' ', $search);
+    $planes=$bdd->query("SELECT * FROM avions WHERE plane_name LIKE '%". $search ."%' ORDER BY id_avion DESC");
+    return $planes;
+    }
+}
 // fonction de test
 function test($arg){
     

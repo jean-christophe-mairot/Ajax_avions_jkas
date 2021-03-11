@@ -1,20 +1,22 @@
 <?php
 include "inc/header.php";
+require 'inc/fonction.php';
+//fonction pour recup les recherches
+$searchResults = getSearch();
+// test($searchResults);
 
 
-// test($allplanes);
+
 
 ?>
 <div class="container">
 	<div class="searchBar">
-		<form action="" method="post">
+		<form action="" method="POST">
 			<!-- champ de recherche du user -->
 			<label for="search">Faite votre recherche</label>
 			<input type="search" name="search" id="search" placeholder="Search.." />
 			<button type="submit" value="validate">envoyer</button>
-			<!-- champ de proposition venant de la base de donnée -->
-			<!-- <label for="resultSearch">Proposition</label>
-			<input type="text" name="resultSearch" id="resultSearch" />		 -->
+			<datalist id="planesDcs"></datalist>
 		</form>
 	</div>
 		<div class="flex">
@@ -29,6 +31,7 @@ include "inc/header.php";
 			</div>
 		</div>
 	</div>
+
 <?php
 include "inc/footer.php";
 ?>

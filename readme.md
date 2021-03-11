@@ -16,13 +16,14 @@ La base de données n’a pas besoin d’être complexe, une table suffit. Soyez
 Exemple : Sur le thème du foot, vous pouvez par exemple sélectionner vos 10 joueurs préférés et essayer de faire deviner à l’utilisateur qui est votre top 10. On peut faire le même principe sur des livres, films, pizzas, etc.
 
 Ressources :
-XMLHttpRequest
-Fetch
-LIKE (SQL)
+XMLHttpRequest ok
+Fetch ok
+LIKE (SQL) ok
 Datalist (HTML) ==> menu
 
 - https://developer.mozilla.org/fr/docs/Web/HTML/Element/datalist
 - https://www.youtube.com/watch?v=wxz5vJ1BWrc
+- https://www.w3schools.com/tags/ref_eventattributes.asp
 
 ```
 document.createElement
