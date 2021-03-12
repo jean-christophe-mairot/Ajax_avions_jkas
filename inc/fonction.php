@@ -5,7 +5,8 @@ include 'bdd.php';
 function getAll()
 {
     $bdd = getBdd();
-    $result = $bdd->query("SELECT * FROM avions");
+    $result = $bdd->prepare("SELECT * FROM avions");
+    $result->execute();
     $allplanes = $result->fetchall();
     return $allplanes;
 }
@@ -17,8 +18,10 @@ function getSearch(){
     $search = htmlspecialchars($_POST['search']);
     // exlode pour la separation des recherches
     // $search_array = explode(' ', $search);
-    $planes=$bdd->query("SELECT * FROM avions WHERE plane_name LIKE '%". $search ."%' ORDER BY id_avion DESC");
-    return $planes;
+    $planes=$bdd->prepare("SELECT * FROM avions WHERE plane_name LIKE '%". $search ."%' ORDER BY id_avion DESC");
+    $planes->execute();
+    $allplanes =$planes->fetchAll();
+    return $allplanes;
     }
 }
 // fonction de test

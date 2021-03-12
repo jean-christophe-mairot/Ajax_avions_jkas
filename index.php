@@ -6,8 +6,6 @@ $searchResults = getSearch();
 // test($searchResults);
 
 
-
-
 ?>
 <div class="container">
 	<div class="searchBar">
