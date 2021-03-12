@@ -5,7 +5,7 @@ include 'bdd.php';
 function getAll()
 {
     $bdd = getBdd();
-    $result = $bdd->prepare("SELECT * FROM avions");
+    $result = $bdd->prepare("SELECT * FROM avions WHERE plane_name");
     $result->execute();
     $allplanes = $result->fetchall();
     return $allplanes;

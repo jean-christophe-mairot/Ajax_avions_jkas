@@ -46,3 +46,17 @@ let element = document.createElement(tagName[, options]);
 **BASE DE DONNEES**
 
 nom de l'avion / description / image_cockpit/ image_ext / video
+
+constructione d'une brique div dans une foreach js
+
+planes.forEach((plane) => {
+// const uneBrique = document.createElement("div");
+// // Ajoute une classe à cette brique pour lui donner un style via CSS
+// uneBrique.className = "classBrique";
+// // Ajoute un contenu à cette brique...
+// //condition if possible
+// uneBrique.innerHTML = plane.description;
+// // Insére cette brique dans la div resultDiv
+// resultDiv.appendChild(uneBrique);
+// // ici le code de dessous
+});
