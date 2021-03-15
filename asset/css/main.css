@@ -1,29 +1,105 @@
+/* global */
+body {
+	margin: 0;
+	padding: 0;
+}
+
 /* finche générale avec champs de recherche*/
-.container {
+.card {
 	border: 1px solid #333;
 	border-radius: 5px;
 	width: 70%;
 	min-height: 300px;
 	margin: 0 auto;
 }
+
+/* flex */
+.flex {
+	display: flex;
+}
+/* header */
+.bando {
+	height: 0px;
+	width: 30%;
+	display: inline-block;
+	border-right: 150px solid transparent;
+	border-bottom: 150px solid rgb(0, 0, 0);
+}
+.bando h1 {
+	color: white;
+	text-align: center;
+	font-size: 3rem;
+	margin-bottom: 0%;
+}
+.bando h3 {
+	color: rgb(173, 164, 164);
+	text-align: center;
+	font-size: 1.5rem;
+	margin-top: 0;
+}
+.bandoDiagoLarge {
+	transform: skewX(45deg) skewY(0deg);
+	width: 10%;
+	height: 150px;
+	background-color: rgba(0, 0, 0, 0.486);
+}
+.bandoDiagoMed {
+	transform: skewX(45deg) skewY(0deg);
+	width: 5%;
+	height: 150px;
+	background-color: rgba(0, 0, 0, 0.253);
+	margin-left: 40px;
+}
+.bandoDiagoSmall {
+	transform: skewX(45deg) skewY(0deg);
+	width: 5%;
+	height: 150px;
+	background-color: rgba(0, 0, 0, 0.075);
+	margin-left: 20px;
+}
 /* entête champ de recherche */
 .searchBar {
-	background-color: rgb(19, 17, 17);
-	color: aliceblue;
+	position: relative;
+	height: 0px;
+	width: 30%;
+	display: inline-block;
+	border-right: 150px solid transparent;
+	border-top: 150px solid rgb(0, 0, 0);
 	text-align: center;
-	padding: 20px 0;
 }
+.searchBar form {
+	display: flex;
+	position: absolute;
+	justify-content: center;
+	top: -100px;
+	margin-left: 20px;
+	width: 100%;
+}
+.searchBar form input {
+	width: 90%;
+}
+
+.btn {
+	border-radius: 50px;
+	border: none;
+	width: 50px;
+	height: 40px;
+	margin-left: 5px;
+	background-image: url(../../img/UI/eye-regular.svg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding: 0;
+	opacity: 0.8;
+}
+.btn:focus {
+	outline: none;
+}
+
 /* test */
 .test {
 	border: red dashed 2px;
-	height: 300px;
 	width: 50%;
 }
 .testImg {
 	border: rgb(14, 238, 6) dashed 2px;
-	height: 80px;
-}
-/* flex */
-.flex {
-	display: flex;
 }

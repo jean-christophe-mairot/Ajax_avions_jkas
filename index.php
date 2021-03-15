@@ -7,29 +7,31 @@ $searchResults = getSearch();
 
 
 ?>
-<div class="container">
-	<div class="searchBar">
-		<form action="" method="POST">
-			<!-- champ de recherche du user -->
-			<label for="search">Faite votre recherche</label>
-			<input type="search" list="planesDcs" autocomplete="off" name="search" id="search" placeholder="Search.." />
-			<datalist id="planesDcs"></datalist>	
-			<button type="submit" id="validate" value="validate">envoyer</button>
-				
-		</form>
-	</div>
+	<div class="flex">
+		<div class="searchBar">
+			<form action="" method="POST">
+				<!-- champ de recherche du user -->
+				<label for="search"></label>
+				<input type="search" list="planesDcs" autocomplete="off" name="search" id="search" placeholder="Quel avions ?" />
+				<datalist id="planesDcs"></datalist>	
+				<button class="btn" type="submit" id="validate" value="validate"></button>
+			</form>
+		</div>		
+	</div >
+<!-- fermeture div qui commence dans le header -->
+<!-- debut de la card -->
 		<div class="flex">
-			<div class="test" id="description">
+			<div class="" id="description">
 				<!-- resultat de la recherche txt description-->
 			</div>
-			<div class="test" id="imgMovie">
+			<div class="" id="imgMovie">
 				<!-- resultat de la recherche img-->
-				<div class="testImg" id="img_ext">img1</div>
-				<div class="testImg" id="img_int">img1</div>
-				<div class="testImg" id="movie">img1</div>
+				<div class="" id="img_ext"></div>
+				<div class="" id="img_int"></div>
+				<div class="" id="movie"></div>
 			</div>
 		</div>
-	</div>
+	
 
 <?php
 include "inc/footer.php";
