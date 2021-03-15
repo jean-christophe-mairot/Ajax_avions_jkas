@@ -21,6 +21,7 @@ Fetch ok
 LIKE (SQL) ok
 Datalist (HTML) ==> menu
 
+- https://www.alsacreations.com/article/lire/1418-css3-transformations-2d.html#rotate
 - https://outils-css.aliasdmc.fr/generateur-de-triangles-css.php
 - https://developer.mozilla.org/fr/docs/Web/HTML/Element/datalist
 - https://www.youtube.com/watch?v=wxz5vJ1BWrc
