@@ -28,10 +28,10 @@ $searchResults = getSearch();
 
 			<!-- <div class="" id="imgMovie"> -->
 				<!-- resultat de la recherche img-->
-				<!-- <div class="" id="img_ext"></div>
-				<div class="" id="img_int"></div>
-				<div class="" id="movie"></div>
-			</div> -->
+			<div class="" id="img_ext"></div>
+			<div class="" id="img_int"></div>
+			<div class="" id="movie"></div>
+			</div>
 			<div class="bgPlane"></div>
 		</div>
 	
