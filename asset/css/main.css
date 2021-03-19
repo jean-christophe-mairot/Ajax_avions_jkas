@@ -5,19 +5,17 @@ body {
 }
 
 /* finche générale avec champs de recherche*/
-.card {
-	border: 1px solid #333;
-	border-radius: 5px;
-	width: 70%;
-	min-height: 300px;
-	margin: 0 auto;
-}
+
 
 /* flex */
 .flex {
 	display: flex;
 }
 /* header */
+.bg_bando{
+	
+	background: linear-gradient(180deg, rgba(0, 47, 255, 0.8), rgba(255,0,0,0) 99.71%);
+}
 .bando {
 	height: 0px;
 	width: 30%;
@@ -94,26 +92,32 @@ body {
 .btn:focus {
 	outline: none;
 }
-/* card */
-.card {
-	margin-top: 50px;
+/* card  */
+.card{
+	width: 95%;
+	display:flex;
+	flex-wrap: wrap;
+	margin: 0 auto;
 }
-.bgPlane {
-	display: inline-block;
-
-	width: 200px;
-	height: 200px;
-	border-left: 174px solid transparent;
-	/* background-image: url(../../img/m2000/cockpit.jpg); */
-	background-size: cover;
-	background-repeat: no-repeat;
+.planeDescription{
+	min-width: 250px;
+	margin: 10px 20px;
 }
-
-/* test */
-.test {
-	border: red dashed 2px;
+.content_card{
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	min-width: 300px;
 	width: 50%;
+	/* border: 1px red solid; */
 }
-.testImg {
-	border: rgb(14, 238, 6) dashed 2px;
+.imgplane{
+ width: 100%;
+}
+.planeName{
+	width: 95%;
+	
+}
+.planeName h2{
+	margin-left: 20px;
 }

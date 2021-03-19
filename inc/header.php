@@ -9,13 +9,13 @@
 	</head>
 	<body>
 		<!-- bando avec degradé diagonal -->
-	<div class="flex bg">
-		<div class="bando">
-			<h1>JKAS</h1>
-			<h3>DCS Planes</h3>	
-		</div>	
-		<div class="bandoDiagoLarge"></div>
-		<div class="bandoDiagoMed"></div>
-		<div class="bandoDiagoSmall"></div>
-
-	</div>
+	<div class="bg_bando">
+		<div class="flex">
+			<div class="bando">
+				<h1>JKAS</h1>
+				<h3>DCS Planes</h3>	
+			</div>	
+			<div class="bandoDiagoLarge"></div>
+			<div class="bandoDiagoMed"></div>
+			<div class="bandoDiagoSmall"></div>
+		</div>

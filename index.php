@@ -18,21 +18,27 @@ $searchResults = getSearch();
 			</form>
 		</div>		
 	</div >
+</div >
 <!-- fermeture div qui commence dans le header -->
 <!-- debut de la card -->
-		<div class="flex card">
+		<div class="planeName">
+			<h2 id="plane_name"></h2>
+		</div> 
+		<div class="card">
 			
-			<div class="" id="description">
+			<div class="content_card">
+				<div class="planeDescription" id="description"></div>
+			</div>
 				<!-- resultat de la recherche txt description-->
 			<!-- </div> -->
 
 			<!-- <div class="" id="imgMovie"> -->
 				<!-- resultat de la recherche img-->
-			<div class="" id="img_ext"></div>
-			<div class="" id="img_int"></div>
-			<div class="" id="movie"></div>
-			</div>
-			<div class="bgPlane"></div>
+			<div class="content_card">
+				<div class="imgplane" id="img_ext"></div>
+				<div class="imgplane" id="img_int"></div>
+				<!-- <div class="" id="movie"></div> -->
+			</div>		
 		</div>
 	
 

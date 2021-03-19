@@ -1,7 +1,8 @@
 const resultDiv = document.getElementById("description");
 const imageExt = document.getElementById("img_ext");
 const imageInt = document.getElementById("img_int");
-const moviePlane = document.getElementById("movie");
+// const moviePlane = document.getElementById("movie");
+const planeName = document.getElementById("plane_name");
 
 const search = document.getElementById("search");
 const form = document.querySelector("form");
@@ -21,6 +22,7 @@ search.addEventListener("input", (e) => {
 	resultDiv.innerHTML = "";
 	dataList.innerHTML = "";
 	if (search.value !== "") {
+		
 	const formData = new FormData(form);
   
 	//On communique avec le script passé en 1er argument sous forme de caractère
@@ -64,7 +66,11 @@ btn.addEventListener("click", (e) => {
 	e.preventDefault();
 	
 	// remise à 0 de resultDiv
-	resultDiv.innerHTML = "";
+	resultDiv.innerHTML ="";
+	imageExt.innerHTML ="";
+	imageInt.innerHTML ="";
+	planeName.innerText="";
+
 	if (search.value !== "") {
 	const formData1 = new FormData(form);
   
@@ -83,10 +89,11 @@ btn.addEventListener("click", (e) => {
 		console.log(planes);
 		planes.forEach((plane) => {
 			//fabrique une brique
+			planeName.innerText= plane.plane_name;
 			resultDiv.innerHTML = plane.description;
 			imageExt.innerHTML = `<img src="${plane.image_ext}" alt="">`;
 			imageInt.innerHTML = `<img src="${plane.image_cockpit}" alt="">`;
-			moviePlane.innerHTML = plane.movie;
+			// moviePlane.innerHTML = plane.movie;
 		});
   
 	})
